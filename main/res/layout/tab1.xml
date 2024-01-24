@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.app.Game.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:textSize="48dp"
+        android:text="开始游戏" />
+
+    <Button
+        android:id="@+id/btn_rank"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/startButton"
+        android:textSize="48dp"
+
+        android:text="排行榜" />
+    <Button
+        android:id="@+id/btneasy"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/btn_rank"
+        android:textSize="48dp"
+
+        android:text="简单难度" />
+    <Button
+        android:id="@+id/btnmiddle"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/btneasy"
+        android:textSize="48dp"
+
+        android:text="一般难度" />
+    <Button
+        android:id="@+id/btnnormal"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/btnmiddle"
+        android:textSize="48dp"
+
+        android:text="正常难度" />
+    <Button
+        android:id="@+id/btninsane"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_below="@+id/btnnormal"
+        android:textSize="48dp"
+
+        android:text="困难难度" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 显示游戏剩余时间的文本框 -->
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dip" android:width="150px" android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</RelativeLayout>
